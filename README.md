@@ -5,13 +5,13 @@ INSTALL:
 
 brew install python3
 
-pip intall requests && pip install websocket-client && pip install pyobjc && pip intall playsound
+pip install requests && pip install websocket-client && pip install pyobjc && pip install playsound
 
 *On Ubuntu*
 
 sudo apt-get install pip-python
 
-pip intall requests && pip install websocket-client && pip install pyobjc && pip intall playsound
+pip install requests && pip install websocket-client && pip install pyobjc && pip install playsound
 
 RUN: 
 
