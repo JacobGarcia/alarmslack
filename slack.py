@@ -24,14 +24,15 @@ def on_open(ws):
 
 
 if __name__ == "__main__":
-    token = "xoxp-63699683760-325096873269-347797851971-cd9296027ecc70d3c90b9cada1cfd9fe"
+    token = "xoxp-63699683760-325096873269-348559783634-0e5101e5da1b93cce542080e30ecce71"
     headers = {
         'content-type': "application/x-www-form-urlencoded",
         'Authorization': 'Bearer ' + token,
-        'cache-control': "no-cache",
+        'cache-control': "no-cache"
     }
     r = requests.get('https://slack.com/api/rtm.connect',headers=headers)
-    websock = (r.json()["url"])
+    print (r)
+    websock = r.json()["url"]
     ws = websocket.WebSocketApp(websock,
                                 on_message = on_message,
                                 on_error = on_error,
