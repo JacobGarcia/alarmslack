@@ -7,7 +7,7 @@ def on_message(ws, message):
     message = json.loads(message)
     print (message)
     print (message["text"])
-    if message["text"] == "*Build started*":
+    if message["text"] == "*Build succeed!*\nYou're awersome":
         playsound("audio.mp3")
         print ("sonaaar")
 
@@ -24,7 +24,7 @@ def on_open(ws):
 
 
 if __name__ == "__main__":
-    token = "xoxp-63699683760-325096873269-348559783634-0e5101e5da1b93cce542080e30ecce71"
+    token = "xoxp-55574273794-248433869075-403660196384-1db0432ea40018af985cc50c050a1d79"
     headers = {
         'content-type': "application/x-www-form-urlencoded",
         'Authorization': 'Bearer ' + token,
@@ -39,5 +39,3 @@ if __name__ == "__main__":
                                 on_close = on_close)
     ws.on_open = on_open
     ws.run_forever()
-
-    
