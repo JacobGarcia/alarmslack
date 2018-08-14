@@ -8,7 +8,7 @@ def on_message(ws, message):
     print (message)
     print (message["text"])
     if message["text"] == "*Build succeed!*\nYou're awersome":
-        playsound("audio.mp3")
+        playsound("/Users/jacob/Documents/Misc/alarmslack/audio.mp3")
         print ("sonaaar")
 
 def on_error(ws, error):
